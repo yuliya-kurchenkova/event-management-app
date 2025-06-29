@@ -1,0 +1,11 @@
+<div class="base-input-container">
+  <input 
+    type="number" 
+    [value]="innerValue" 
+    (input)="onInput($event)" 
+    (blur)="onTouched()" 
+    placeholder="Числовой инпут"
+    class="base-input" 
+  />
+</div>
+

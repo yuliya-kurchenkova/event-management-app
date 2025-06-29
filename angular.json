@@ -31,8 +31,10 @@
             ],
             "styles": [
               "src/styles.scss"
-            ]
-          },
+            ],
+            "baseHref": "/event-management-app/",
+            "outputPath": "dist/event-management-app"
+             },
           "configurations": {
             "production": {
               "budgets": [
@@ -52,7 +54,8 @@
             "development": {
               "optimization": false,
               "extractLicenses": false,
-              "sourceMap": true
+              "sourceMap": true,
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
@@ -88,11 +91,15 @@
               }
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css"
             ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

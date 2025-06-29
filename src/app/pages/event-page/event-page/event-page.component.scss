@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  padding: 2rem;
+  background-color: #f7f8fa;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.col-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

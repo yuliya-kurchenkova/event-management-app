@@ -1,0 +1,15 @@
+<form [formGroup]="form" class="base-form">
+  @for (control of controls; track control.formControlName) {
+    <div class="base-form-field">
+      <label class="base-form-label">{{ control.label }}:</label>
+
+      @if (control.type === 'text') {
+        <e-input-text [formControlName]="control.formControlName"></e-input-text>
+      } @else if (control.type === 'number') {
+        <e-input-number [formControlName]="control.formControlName"></e-input-number>
+      }
+    </div>
+  }
+</form>
+
+
